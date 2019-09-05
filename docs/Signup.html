@@ -1,0 +1,207 @@
+<html>
+        <head>
+
+                <link rel="stylesheet" href="css/signup.css">
+            <title>Pool Club</title>
+            <link rel="icon" href ="images/ball.jpg" type="image" sizes="16x16" >
+            
+            </head>
+
+
+
+
+
+
+<body>
+        
+
+
+<header>
+        <img src="images/pool.jpg" float="left" width="200" height="150" />
+        <h1 align="center">Pool Club</h1> 
+
+
+</header>
+
+
+
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="About.html">About</a></li>
+<li><a href="Signup.html">Sign Up</a></li>
+
+</ul>
+
+
+
+
+
+<div class="grid"	>
+		
+
+        <div class="slideshow-container">
+                <center>
+                <div class="mySlides fade">
+                     
+                     <img src="images/pool3.jpg" height="400px" width="100%">
+                     
+                </div>
+                
+                <div class="mySlides fade">
+                     
+                     <img src="images/pool4.jpg" height="400px" width="100%">
+                     
+                </div>
+                
+                
+                <div class="mySlides fade">
+                     
+                     <img src="images/pool5.jpg" height="400px" width="100%">
+                     
+                </div>
+                
+                
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                     <span class="dot" onClick="currentSlide(1)"></span>
+                     <span class="dot" onClick="currentSlide(2)"></span>
+                     <span class="dot" onClick="currentSlide(3)"></span>
+                     
+                
+                    </div>
+                     
+                
+                     
+                
+                </div>
+                </center>
+                
+                      
+                      
+                <script>
+                    
+                var slideIndex = 1;
+                var timer = null;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  clearTimeout(timer);
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  clearTimeout(timer);
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n==undefined){n = ++slideIndex}
+                  if (n > slides.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";
+                  dots[slideIndex-1].className += " active";
+                  timer = setTimeout(showSlides, 3000);
+                } 
+                </script>
+                    
+
+	
+
+
+	
+   
+		
+
+
+		</div>
+		
+			
+		
+		
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+                
+<div class="grid2"	>
+        
+       
+        		
+                
+        
+      <center> 
+    <h1>Club Sign Up Form</h1>  
+    
+    <legend>Please fill this in if you want to sign up for our club</legend>
+    <br>         
+    <form action="Signup.html">
+        First name:<br>
+        <input type="text" name="firstname" value="">
+        <br>
+        Last name:<br>
+        <input type="text" name="lastname" value="">
+        <br>Email:<br>
+        <input type="text" name="email" value="">
+        <br>Age:<br>
+        <input type="text" name="age" value="">
+        <br>
+        
+        <input type="submit" class="submit" value="Submit">
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+      </form>
+     
+    
+    </center> 
+      
+                    
+                    
+                    		
+                   
+                    
+                </div>
+                
+                
+                    
+                
+     
+    
+    
+
+
+
+
+                <div class="ulb">
+                    
+                  <div class="flex-container">
+                          <div><li><a href="index.html">Home</a></li></div>
+                          <div><li><a href="About.html">About</a></li></div>
+                          <div><li><a href="Signup.html">SignUp</a></li></div>  
+                        </div>
+                  
+                  
+              
+            </div>
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+ul{
+    list-style-type: none ;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+
+}
+.ulb{
+    list-style-type: none ;
+    position: fixed;
+    margin: 0;
+    bottom: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: green;
+    width: 99%;
+    text-align: center;
+    
+    
+
+
+}
+
+li {float: left;}
+
+li a{
+display: block;
+color: beige;
+text-align: center;
+padding: 20px;
+text-decoration: none;
+}
+
+li a:hover{
+    background-color: darkgreen;
+}
+.center{
+    float: none;
+}
+
+
+
+
+
+
+
+header{
+    background-color: green;
+    margin-left: 5%;
+
+    height: 150px;
+    border: 3px solid black;
+    width: 90%
+    
+}
+
+h1{
+margin-top: -100px;
+}
+img{
+    margin-bottom: 10px;
+}
+article{
+    
+    margin-top: 10px;
+    margin-left: 2px;
+}
+aside{
+    background-color: lightgray;
+    border: 3px solid black;
+
+    
+    
+    
+    
+    
+    
+}
+.grid{
+
+display: grid;
+grid-template-columns: 1fr 2fr;
+
+}
+.grid2{
+
+display: grid;
+grid-template-columns: 2fr 2fr 10fr;
+
+}
+.grid3{
+display: grid;
+grid-template-columns: 1fr;
+}
+
+.grid4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+    
+
+.textheader{
+ position: relative;
+ padding-left: 60%;
+
+}
+.paragraph2
+{
+    padding-left: 30px;
+}
+
+.paragraph
+{
+position: static;
+
+}
+body{
+    background-color: silver;
+    font-family: 'Lato', sans-serif;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: green;
+    text-align: center;
+    
+
+
+}
+/*Slide Show container*/
+.slideshow-container {
+    
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev .next {
+    
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0m 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba (0,0,0,0.8);
+}
+
+.text {
+    color: #000000;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #666666;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color:grey;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: green;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .flex-container > div {
+    
+    width: 80px;
+    margin: 0px;
+    text-align: center;
+    line-height: 0px;
+    font-size: 16px;
+  }
